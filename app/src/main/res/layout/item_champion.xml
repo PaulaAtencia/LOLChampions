@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/champion_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/champion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Champion Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/champion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Champion Title"
+            android:textColor="@android:color/darker_gray" />
+
+        <!-- Lore del campeón -->
+        <TextView
+            android:id="@+id/champion_lore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Champion Lore"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
